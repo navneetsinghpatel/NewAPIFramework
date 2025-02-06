@@ -1,0 +1,30 @@
+[
+  {
+    "inputRequest": {
+      "url": "api/v1/scheduled_activities/create/",
+      "method": "POST",
+      "payload": "Test3"
+    },
+    "expectedResponse": {
+      "body": "{\"errors\": }]}",
+      "statusCode": 400
+    },
+    "role": {
+      "roleType": "Admin"
+    }
+  },
+  {
+    "inputRequest": {
+      "url": "api/v1/scheduled_activities/create/",
+      "method": "POST",
+      "payload": "Test 4"
+    },
+    "expectedResponse": {
+      "body": "{\"errors\": }]}",
+      "statusCode": 400
+    },
+    "role": {
+      "roleType": "Admin"
+    }
+  }
+]
